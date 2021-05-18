@@ -1,0 +1,21 @@
+
+/* ---font family Abel- */
+@font-face{
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel-Regular.ttf);
+}
+
+/* ---font family oswald- */
+@font-face{
+    font-family: Oswald;
+    src: url(../fonts/Oswald/OFL.txt);
+}
+/* ---font family opens sans- */
+@font-face{
+    font-family: Open_Sans;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Light.ttf;
+}
