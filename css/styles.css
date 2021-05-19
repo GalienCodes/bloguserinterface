@@ -324,6 +324,7 @@ main .post-content .post-title a{
 
 .site-content > .sidebar .category-list{
     font-family: Abel;
+    padding-left: 32px;
 }
 .site-content > .sidebar .category-list .list-items{
     background: burlywood;
@@ -346,6 +347,9 @@ main .post-content .post-title a{
 .site-content .sidebar .popular-post h2{
     padding-top: 2rem;
 }
+.category h2,.popular-post h2, .popular-tags h2,.news-letter h2{
+    padding-left: 32px;
+}
 
 .site-content .sidebar .popular-post .post-info{
     padding: .4rem  .1rem !important;
@@ -360,6 +364,8 @@ main .post-content .post-title a{
 
 .site-content .sidebar .news-letter{
     padding-top:1rem;
+    width: 80%;
+
 }
 
 .site-content .sidebar .news-letter .form-element{
@@ -367,22 +373,27 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .news-letter .input-element{
-    width: 80%;
+    width: 90%;
     height: 1.9rem;
     padding: .3rem .5rem;
     font-family: Abel;
     font-size: 1rem;
+    /* width: 200px; */
+
 }
 .site-content .sidebar .news-letter .form-btn{
     border-radius: 0;
     padding: .8rem 32%;
     margin: 1rem 0;
     background: burlywood;
+    width: 100%;
 
 }
 .site-content .sidebar .popular-tags{
     padding: 0rem ;
+    padding-left: 15px;
 }
+
 
 .site-content .sidebar .popular-tags .tag{
     background: burlywood;
@@ -405,6 +416,7 @@ footer.footer {
 footer.footer .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    padding-left: 32px;
 }
 
 footer.footer .container > div{
@@ -427,6 +439,7 @@ footer.footer .container .form-element{
     display: inline-block;
 }
 
+
 footer.footer .container .news-letter .form-element input{
     padding: .5rem .7rem;
     border: none;
@@ -442,6 +455,10 @@ footer.footer .news-letter .form-element span{
     padding: .5rem 1rem;
     cursor: pointer;
 }
+footer.footer .container .news-letter .form-element input:blur{
+    background: burlywood;
+    color: burlywood;
+}
 
 footer.footer .partenariat div > img{
     display: inline-block;
@@ -449,12 +466,22 @@ footer.footer .partenariat div > img{
     height: 50%;
     margin: .3rem .4rem;
 }
+footer.footer .partenariat .flex-row{
+    margin-left: 0;
+}
 footer.footer .follow div i{
     color: white;
     padding: 0.4rem;
 
 }
+footer.footer .container .about-us, footer.footer .container .news-letter  {
+    padding-left: 0;
+}
 
+footer.footer .container .partenariat, 
+footer.footer .container .follow{
+    padding-left: 0;
+}
 footer.footer .rights {
      justify-content: center;
      font-family: Oswald;
@@ -479,7 +506,9 @@ footer.footer .move-up span:hover{
 }
 /* ----footer----- */
 /* -x---Main contain----x- */ 
-
+.flex-row{
+    margin-left: 14px;
+}
 .clearfix{height: 8rem;}
 
 
@@ -503,7 +532,8 @@ footer.footer .move-up span:hover{
 }
 
 /*   ----x--     View less than or equal to 1130px ----x*/
-@media only screen and (max-width: 750px){
+
+@media only screen and (max-width: 755px){
     .nav .nav-menu,.nav .nav-items{
        flex-direction: column;
     }
@@ -520,6 +550,13 @@ footer.footer .move-up span:hover{
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr); 
 }
+main .site-content .post-content > .post-img , .post-title{
+    padding: 1rem 2rem;
+}
+    .site-content > .sidebar .category-list{
+        padding-left: 40px;}
+    
+    
 }
 
 /* ---x View less than or equal to 750px --x--- */
